@@ -624,7 +624,7 @@ export interface WebpackOptions {
 	/**
 	 * Options affecting the normal modules (`NormalModuleFactory`).
 	 */
-	module?: Module;
+	module?: ModuleOptions;
 	/**
 	 * Name of the configuration. Used when loading multiple configurations.
 	 */
@@ -927,7 +927,7 @@ export interface Loader {
 /**
  * Options affecting the normal modules (`NormalModuleFactory`).
  */
-export interface Module {
+export interface ModuleOptions {
 	/**
 	 * An array of rules applied by default for modules.
 	 */
@@ -2166,7 +2166,7 @@ export interface WebpackOptionsNormalized {
 	/**
 	 * Options affecting the normal modules (`NormalModuleFactory`).
 	 */
-	module: Module;
+	module: ModuleOptions;
 	/**
 	 * Name of the configuration. Used when loading multiple configurations.
 	 */
